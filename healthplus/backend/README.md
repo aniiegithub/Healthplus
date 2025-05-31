@@ -26,27 +26,17 @@ This folder contains the backend API for the Healthplus application, built with 
    git clone https://github.com/aniiegithub/Healthplus.git
    cd Healthplus/healthplus/backend
 Install dependencies:
-
-bash
-Copy
-Edit
 npm install
 Set up environment variables:
 
 Create a .env file in the backend folder and add necessary variables, for example:
 
-ini
-Copy
-Edit
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/healthplus
-JWT_SECRET=your_jwt_secret_here
-Start the server:
+MONGO_URI= mongodb://localhost:27017/healthplus
+BASE_URL=http://localhost:5000
 
-bash
-Copy
-Edit
-npm start
+Start The server
+node server.js
 The backend server will run on http://localhost:5000 (or your specified PORT).
 
 Usage
@@ -56,18 +46,5 @@ API routes are defined in the routes folder.
 
 Candidate reports can be generated and downloaded.
 
-Folder Structure
-bash
-Copy
-Edit
-backend/
-├── controllers/       # Request handlers
-├── models/            # Mongoose schemas
-├── routes/            # Express routes
-├── utils/             # Helper functions
-├── config/            # Configuration files
-├── middleware/        # Middleware functions
-├── package.json       # Project dependencies
-└── README.md          # This file
 Contributing
 Feel free to open issues or pull requests to improve the backend!
